@@ -90,15 +90,8 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khd-1k-LkJ">
-                    <rect key="frame" x="8" y="253" width="584" height="2"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="2" id="RgV-8f-dLT"/>
-                    </constraints>
-                </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6y-Vs-rl9">
-                    <rect key="frame" x="61" y="263" width="16" height="16"/>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6y-Vs-rl9">
+                    <rect key="frame" x="61" y="203" width="16" height="16"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="16" id="4pY-lC-dEM"/>
                         <constraint firstAttribute="width" constant="16" id="bDk-uS-paI"/>
@@ -110,14 +103,14 @@
                         <action selector="onReply:" destination="-1" eventType="touchUpInside" id="5jG-aB-IC3"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCd-EB-luq">
-                    <rect key="frame" x="137" y="263" width="19" height="22"/>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCd-EB-luq">
+                    <rect key="frame" x="137" y="203" width="19" height="22"/>
                     <state key="normal" image="retweet">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGj-QI-HFm">
-                    <rect key="frame" x="216" y="263" width="16" height="22"/>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGj-QI-HFm">
+                    <rect key="frame" x="216" y="203" width="16" height="22"/>
                     <state key="normal" image="fav">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -125,12 +118,19 @@
                         <action selector="onFav:" destination="-1" eventType="touchUpInside" id="5hh-cO-UCa"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qeg-B2-tON">
-                    <rect key="frame" x="8" y="145" width="584" height="100"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qeg-B2-tON">
+                    <rect key="frame" x="8" y="145" width="584" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="100" id="WGd-dQ-1u4"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="WGd-dQ-1u4"/>
                     </constraints>
                 </imageView>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="khd-1k-LkJ">
+                    <rect key="frame" x="8" y="193" width="584" height="2"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="RgV-8f-dLT"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>

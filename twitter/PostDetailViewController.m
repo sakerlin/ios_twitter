@@ -71,10 +71,10 @@
     }
     
     if (self.originalTweet.tweetPhotoUrl != nil) {
-        UIImage *photo = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: self.originalTweet.tweetPhotoUrl]]];
+       // UIImage *photo = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: self.originalTweet.tweetPhotoUrl]]];
         [self.tweetPhotoImage setImageWithURL:[NSURL URLWithString:self.originalTweet.tweetPhotoUrl] placeholderImage:[UIImage imageNamed:@"imagePlaceHolder"]];
-        float ratio = (photo.size.width / photo.size.height);
-        self.tweetPhotoImageHeight.constant = self.tweetPhotoImage.frame.size.width / ratio;
+      //  float ratio = (photo.size.width / photo.size.height);
+      //  self.tweetPhotoImageHeight.constant = self.tweetPhotoImage.frame.size.width / ratio;
          
     } else {
         NSLog(@"no photo");

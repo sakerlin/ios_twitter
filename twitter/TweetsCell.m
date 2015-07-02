@@ -81,7 +81,7 @@
     self.retweetLabel.text = @"";
     
     self.timeStamp.text = self.tweet.createdAt.shortTimeAgoSinceNow;
-    self.tweetPhotoImageHeight.constant = 0.0;
+    
     self.authorImageView.layer.cornerRadius = 4;
     self.authorImageView.clipsToBounds = YES;
     
@@ -101,11 +101,10 @@
     }
     
     if (self.tweet.tweetPhotoUrl != nil) {
-        UIImage *photo = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: self.tweet.tweetPhotoUrl]]];
-        
+        //UIImage *photo = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: self.tweet.tweetPhotoUrl]]];
+       // float ratio = (photo.size.width / photo.size.height);
+       // self.tweetPhotoImageHeight.constant = floor(self.tweetPhotoImage.image.size.width / ratio);
         [self.tweetPhotoImage setImageWithURL:[NSURL URLWithString:self.tweet.tweetPhotoUrl] placeholderImage:[UIImage imageNamed:@"imagePlaceHolder"]];
-        float ratio = (photo.size.width / photo.size.height);
-        self.tweetPhotoImageHeight.constant = self.tweetPhotoImage.image.size.width / ratio;
         
     } else {
         [self.tweetPhotoImage setImage:nil];

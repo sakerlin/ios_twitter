@@ -58,22 +58,14 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="f2e-Ut-zm6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="26v-Aw-0Pv"/>
                 <constraint firstAttribute="trailing" secondItem="6LV-h6-bm7" secondAttribute="trailing" id="2ZN-Uk-8Ng"/>
                 <constraint firstAttribute="trailing" secondItem="f2e-Ut-zm6" secondAttribute="trailing" id="BsR-sY-yzT"/>
                 <constraint firstItem="6LV-h6-bm7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="N4b-x4-1gu"/>
                 <constraint firstAttribute="bottom" secondItem="f2e-Ut-zm6" secondAttribute="bottom" id="QV6-YP-6bg"/>
-                <constraint firstItem="f2e-Ut-zm6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aLy-HA-Mkg"/>
                 <constraint firstItem="6LV-h6-bm7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iP1-fh-jE9"/>
                 <constraint firstItem="f2e-Ut-zm6" firstAttribute="top" secondItem="6LV-h6-bm7" secondAttribute="bottom" id="ohv-Ay-5bo"/>
                 <constraint firstItem="f2e-Ut-zm6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="r0c-3s-9rK"/>
             </constraints>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="26v-Aw-0Pv"/>
-                    <exclude reference="aLy-HA-Mkg"/>
-                </mask>
-            </variation>
             <point key="canvasLocation" x="260" y="419"/>
         </view>
     </objects>
